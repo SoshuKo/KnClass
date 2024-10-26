@@ -5,9 +5,9 @@ function applyClassSTransform(word, classNum) {
   if (["b", "bl", "bm", "br", "d", "dl", "dn", "dr", "dz", "dzl", "f", "fl", "fr", "g", "gh", "gl", "gn", "gr", "j", "jr", "r", "s", "v", "z", "zh", "zhr", "zl"].includes(consonant1)) {
     return sPrefixMap[classNum] + word;
   } else if (consonant1 === "q") {
-    return word.replace(/^q/, "s'");
+    return word.replace(/^q/, "s’");
   } else if (consonant1 === "x") {
-    return word.replace(/^x/, "sh'");
+    return word.replace(/^x/, "sh’");
   } else {
     return "s" + word;
   }
