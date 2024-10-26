@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クニューン語クラス転換器</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F09000;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    input, select, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>クニューン語クラス転換器</h1>
+  <div>
+    <label for="root">語根: </label>
+    <input type="text" id="root" placeholder="語根を入力">
+  </div>
+  <div>
+    <label for="class">クラス: </label>
+    <select id="class">
+      <option value="1">クラス1(男性)</option>
+      <option value="2">クラス2(女性)</option>
+      <option value="3">クラス3(中性)</option>
+      <option value="4">クラス4(抽象)</option>
+      <option value="5">クラス5(物質)</option>
+      <option value="6">クラス6(集合)</option>
+    </select>
+  </div>
+  <button onclick="convert()">変換</button>
+  <p id="result">結果: </p>
+
+  <script src="converter.js"></script>
+</body>
+</html>
