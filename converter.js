@@ -19,9 +19,9 @@ function convert() {
   let result = root;
 
   if (classNum === "2") result = root.replace(/a/g, "e");
-  else if (classNum === "3") result = root.replace(/a/g, "i").replace(/ai/g, "úi").replace(/au/g, "íu").replace(/ia/g, "iú").replace(/ua/g, "uí");
+  else if (classNum === "3") result = root.replace(/ai/g, "úi").replace(/au/g, "íu").replace(/ia/g, "iú").replace(/ua/g, "uí").replace(/a/g, "i");
   else if (classNum === "5") result = applyClassSTransform(root.replace(/a/g, "e"), classNum);
-  else if (classNum === "6") result = applyClassSTransform(root.replace(/a/g, "i").replace(/ai/g, "úi").replace(/au/g, "íu").replace(/ia/g, "iú").replace(/ua/g, "uí"), classNum);
+  else if (classNum === "6") result = applyClassSTransform(root.replace(/ai/g, "úi").replace(/au/g, "íu").replace(/ia/g, "iú").replace(/ua/g, "uí").replace(/a/g, "i"), classNum);
   else if (classNum === "4") result = applyClassSTransform(root, classNum);
 
   document.getElementById("result").innerText = `結果: ${result}`;
