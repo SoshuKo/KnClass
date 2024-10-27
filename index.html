@@ -13,10 +13,47 @@
       margin: 0;
       padding: 20px;
     }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
     input, select, button {
       padding: 10px;
       margin: 10px;
       font-size: 1em;
+      border: 2px solid #333;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+    input:focus, select:focus, button:hover {
+      border-color: #FF9900;
+      outline: none;
+    }
+    button {
+      background-color: #333;
+      color: #FFF;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #FF9900;
+    }
+    #result {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    .nav-button {
+      background-color: #007BFF;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1em;
+    }
+    .nav-button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -39,6 +76,8 @@
   </div>
   <button onclick="convert()">変換</button>
   <p id="result">結果: </p>
+
+  <a href="https://soshuko.github.io/KnDIC/" class="nav-button">クニューン語辞書へ</a>
 
   <script src="converter.js"></script>
 </body>
